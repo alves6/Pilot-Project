@@ -1,28 +1,35 @@
+#Test with four candidates. Null and blank votes are counted together, and can also be separated with a modification.
+
 Lula = 0
 Bolsonaro = 0
 Simone = 0
 Ciro = 0
-nulo = 0
-voto =0
-contagem = 0
-while voto != 9:
-    voto = int(input("Digite seu voto: "))
-    contagem = contagem + 1
-    if voto == 13:
+null = 0
+vote =0
+count = 0
+
+#The cycle ends when the number 9 is entered.
+
+while vote != 9:
+    vote = int(input("Enter your vote: "))
+    count = count + 1
+    if vote == 13:
         Lula = Lula + 1
-    elif voto == 22:
+    elif vote == 22:
         Bolsonaro = Bolsonaro + 1
-    elif voto == 15:
+    elif vote == 15:
         Simone = Simone + 1
-    elif voto == 12:
+    elif vote == 12:
         Ciro = Ciro + 1
     else:
-        nulo = nulo +1
-print("Resultados:")
-porLula = (Lula/contagem)
-porBolsonaro = (Bolsonaro/contagem)
-porSimone = (Simone/contagem)
-porCiro = (Ciro/contagem)
+        null = null +1
+print("Results:")
+
+#Vote percentages
+porLula = (Lula/count)
+porBolsonaro = (Bolsonaro/count)
+porSimone = (Simone/count)
+porCiro = (Ciro/count)
 
 print(f'Lula: {porLula: .2%}.')
 print(f'Bolsonaro: {porBolsonaro: .2%}.')
