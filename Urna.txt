@@ -1,0 +1,30 @@
+Lula = 0
+Bolsonaro = 0
+Simone = 0
+Ciro = 0
+nulo = 0
+voto =0
+contagem = 0
+while voto != 9:
+    voto = int(input("Digite seu voto: "))
+    contagem = contagem + 1
+    if voto == 13:
+        Lula = Lula + 1
+    elif voto == 22:
+        Bolsonaro = Bolsonaro + 1
+    elif voto == 15:
+        Simone = Simone + 1
+    elif voto == 12:
+        Ciro = Ciro + 1
+    else:
+        nulo = nulo +1
+print("Resultados:")
+porLula = (Lula/contagem)
+porBolsonaro = (Bolsonaro/contagem)
+porSimone = (Simone/contagem)
+porCiro = (Ciro/contagem)
+
+print(f'Lula: {porLula: .2%}.')
+print(f'Bolsonaro: {porBolsonaro: .2%}.')
+print(f'Simone: {porSimone: .2%}.')
+print(f'Ciro: {porCiro: .2%}.')
